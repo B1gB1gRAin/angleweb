@@ -24,7 +24,7 @@ import com.bigbigrain.vo.QueryVo;
 
 @Controller
 //窄化请求映射:为防止你和你的队友在conroller方法起名的时候重名,所以相当于在url中多加了一层目录,防止重名
-//例如:当前list的访问路径   localhost:8081/ssm0523-1/items/list.action
+//例如:当前list的访问路径   localhost:8081/ssm0523-1/items/list.action 
 @RequestMapping("/items")
 public class ItemsController {
 
