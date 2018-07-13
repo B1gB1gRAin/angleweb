@@ -10,8 +10,10 @@
 		<!-- main version setting -->
 		<junit.version>4.12</junit.version>
 		<spring.version>4.3.7.RELEASE</spring.version>
+		<!-- 
 		<mybatis.version>3.4.2</mybatis.version>
 		<mybatis-spring.version>1.3.1</mybatis-spring.version>
+		 -->
 		<mysql.driver.version>6.0.6</mysql.driver.version>
 		<druid.version>1.0.29</druid.version>
 		<log4j2.version>2.8.1</log4j2.version>
@@ -194,9 +196,10 @@
 		<!-- SERVLET WEB end -->
 
 		<!-- 4.MYBATIS 持久层框架 begin√ -->
-		<dependency>
+		<!--Mybatis及Mybatis-Spring依赖请勿加入项目配置，以免引起版本冲突！！！Mybatis-Plus会自动帮你维护！故将此处注释掉
+		 <dependency>
 			<groupId>org.mybatis</groupId>
-			<artifactId>mybatis</artifactId>		  <!-- mybatis持久层框架 -->
+			<artifactId>mybatis</artifactId>		  mybatis持久层框架
 			<version>${mybatis.version}</version>
 		</dependency>
 		<dependency>
@@ -204,6 +207,7 @@
 			<artifactId>mybatis-spring</artifactId>
 			<version>${mybatis-spring.version}</version>
 		</dependency>
+		 -->
 		<dependency>
 			<groupId>com.baomidou</groupId>
 			<artifactId>mybatis-plus</artifactId>	  <!-- mybatis-plus Mybatis增强辅助工具 -->
